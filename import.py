@@ -46,6 +46,6 @@ confidential_address = wally.confidential_addr_from_addr(
     unconfidential_address, CA_PREFIX, blinding_public_key)
 
 print('liquid-cli importaddress {}'.format(unconfidential_address))
-print('liquid-cli importprivkey {} false'.format(private_key_wif))
+print('liquid-cli importprivkey {} "" false'.format(private_key_wif))
 print('liquid-cli importblindingkey {} {}'.format(confidential_address,
                                                   b2h(blinding_private_key)))
